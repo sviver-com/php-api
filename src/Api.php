@@ -42,6 +42,18 @@ final class Api
         return $this->unwrap($response);
     }
 
+    /**
+     * Проверяет на валидность полученных данных после редиректа.
+     * Можно передать $_GET или его аналог.
+     *
+     * @param array $params
+     * @return bool
+     */
+    public function isValidAuthParams(array $params): bool
+    {
+        return $this->client->isValidAuthParams($params);
+    }
+
     /** @throws ApiException */
     private function unwrap(Response $response): mixed
     {
