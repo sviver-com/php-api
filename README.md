@@ -1,9 +1,14 @@
 # Sviver api
 
+## Установка
+```shell
+composer require sviver/api
+```
+
 # Как работать
 
-1. Создаем `Client`, на основе `ApiKey`
-2. Создаем `Api`, на основе `Client`
+1. Создаем `\Sviver\Api\Client`, на основе `$apiKey`
+2. Создаем `\Sviver\Api\Api`, на основе `\Sviver\Api\Client`
 3. Пользуемся. Например, отправляем события.
 
 ### Примеры кода
