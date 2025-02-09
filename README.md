@@ -21,7 +21,7 @@ $client = \Sviver\Api\Client::build($apiKey, new \GuzzleHttp\Client());
 $api = new \Sviver\Api\Api($client);
 
 // Или можно просто
-$api = new \Sviver\Api\Api::build($apiKey);
+$api = \Sviver\Api\Api::build($apiKey);
 
 $api->sendEvent('new_order', 999999999999, [
     'order_id' => 1,
