@@ -22,6 +22,7 @@ final class Client
         'last_name',
         'username',
         'photo_url',
+        'phone',
     ];
 
     public static function build(string $apiKey, GuzzleClient $guzzle = null): self
